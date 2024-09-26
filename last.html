@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>HXU-HomePage</title>
+    <style>
+        /* 清除默认边距 */
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 设置背景图 */
+        body {
+            background-image: url("https://mail.hxu.edu.cn/coremail/s?func=lp:getImg&org_id=&img_id=background_001");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* 垂直居中 */
+        }
+
+        /* 页面容器 */
+        .page-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 页面内容 */
+        .page-content {
+            background-color: rgba(255, 255, 255, 0.4);
+            width: 960px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            /*justify-content: center;*/
+            /*align-items: center;*/
+            flex-wrap: wrap;
+        }
+
+        /* 页面头部 */
+        .page-header {
+
+            width: 100%;
+            height: 80px;
+            display: flex; /* 使用 Flexbox */
+            align-items: center; /* 垂直居中 */
+        }
+
+        /* logo */
+        .logo {
+            width: 200px;
+            height: 80px;
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+        }
+
+        /* banner */
+        .banner {
+            margin-left: 10px; /* 添加一些间距 */
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 宋体,serif;
+            color: red;
+            width: 540px;
+            height: 80px;
+            display: flex;
+            justify-items: center;
+            align-items: flex-end;
+
+        }
+
+        /* 图片 */
+        .logo img {
+            height: 80px;
+            width: 200px;
+        }
+        .banner2{
+            margin-left: 10px;
+            width:200px;
+            height: 80px;
+            color: #4f4d74;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            font-size: 25px;
+            font-family: 华文新魏,serif;
+        }
+        .menu{
+             width: 100%;
+            height: 30px;
+            background-color: hotpink;
+            margin-top: 10px;
+            display: flex;
+
+
+        }
+        .menu-list{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .columns-all{
+            width: 960px;
+            height: 410px;
+            display:flex;
+            justify-content: space-around;
+        }
+        .columns-l{
+            margin-top: 10px;
+            width: 750px;
+            height: 410px;
+            display: flex;
+            justify-content: space-around;
+
+            flex-wrap: wrap;
+
+        }
+        .column1{
+            width: 370px;
+            height: 200px;
+            background-color: #4f4d74;
+
+        }
+        .column2{
+            width: 180px;
+            height: 200px;
+            background-color: #4f4d74;
+
+        }
+        .columns-r{
+            margin-top: 10px;
+            width: 200px;
+            height: 410px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+        }
+        .column3{
+            width: 200px;
+            height: 130px;
+            background-color: cadetblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="page-content">
+            <div class="page-header">
+                <div class="logo">
+                    <img src="https://mail.hxu.edu.cn/coremail/s?func=lp:getImg&org_id=&img_id=logo_001" alt="logo">
+                </div>
+                <div class="banner">
+                    做足河西文章，产出特色成果，建强丝路名校
+                </div>
+                <div class="banner2">
+                    明德尚美<br>求真笃行
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="https://www.hxu.edu.cn/">学院官网</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://home.hxu.ac.cn/">学院导航</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://jw.hxu.ac.cn/hxxyjw">教务系统</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://mail.hxu.edu.cn/">邮件系统</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://wljx.hxu.edu.cn/">网教平台</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://lib.hxu.edu.cn/">图书馆</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://dangg.hxu.edu.cn/">档案馆</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://www.ecard.hxu.edu.cn/">一卡通系统</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="columns-all">
+                <div class="columns-l">
+                  <div class="column1" id="1">
+                      <img src="https://www10.hxu.edu.cn/images/xiaoyaun0031.jpg" alt="简介" style="width: 370px;height: 200px">
+                  </div>
+                 <div class="column1" id="2"></div>
+                 <div class="column2" id="3"></div>
+                 <div class="column2" id="4"></div>
+                 <div class="column2" id="5"></div>
+                 <div class="column2" id="6"></div>
+                 </div>
+                     <div class="columns-r">
+                    <div class="column3" id="7">
+                       <a href="http://ghc.hxu.edu.cn">
+                           <img src="https://www10.hxu.edu.cn/images/fddxa.jpg" alt="复旦大学对口支援" style="width: 200px; height: 130px;">
+                       </a>
+
+                    </div>
+                   <div class="column3" id="8"></div>
+                   <div class="column3" id="9"></div>
+                  </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
+
+
+
+

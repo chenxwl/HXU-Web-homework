@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HXU-HomePage</title>
+    <link rel="icon" href="https://www10.hxu.edu.cn/favicon.ico" type="image/x-icon">
+    <style>
+        /* 清除默认边距 */
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 设置背景图 */
+        body {
+            background-image: url("https://mail.hxu.edu.cn/coremail/s?func=lp:getImg&org_id=&img_id=background_001");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 页面容器 */
+        .page-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 页面内容 */
+        .page-content {
+            background-color: rgba(255, 255, 255, 0.4);
+            width: 960px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+        }
+
+        /* 页面头部 */
+        .page-header {
+            width: 100%;
+            height: 80px;
+            display: flex; /* 使用 Flexbox */
+            align-items: center; /* 垂直居中 */
+        }
+
+        /* logo */
+        .logo {
+            width: 200px;
+            height: 80px;
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+        }
+
+        /* banner */
+        .banner {
+            margin-left: 10px; /* 添加一些间距 */
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 宋体, serif;
+            color: red;
+            width: 540px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        /* 图片 */
+        .logo img {
+            margin-top: 10px;
+            height: 60px;
+            width: 200px;
+        }
+
+        .banner2 {
+            margin-left: 10px;
+            width: 200px;
+            height: 80px;
+            color: #4f4d74;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            text-align: justify;
+            font-size: 25px;
+            font-family: 华文新魏, serif;
+
+        }
+
+        /* 菜单 */
+        .menu {
+            width: 100%;
+            height: 50px;
+            background-color: rgba(153, 102, 255,0.8);
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-list {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .menu-item {
+            list-style: none;
+            padding: 13px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu-item:hover {
+            background-color: #ff69b4;
+        }
+
+        .columns-all {
+            width: 960px;
+            height: 410px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .columns-l {
+            margin-top: 10px;
+            width: 750px;
+            height: 410px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .column1 {
+            width: 370px;
+            height: 200px;
+            background-color: #4f4d74;
+            margin-bottom: 10px;
+        }
+        .column1:hover{
+            background-color: #ff69b4;
+        }
+
+        .column2 {
+            width: 180px;
+            height: 200px;
+            background-color: #66ccff;
+            margin-bottom: 10px;
+        }
+
+        .columns-r {
+            margin-top: 10px;
+            width: 200px;
+            height: 410px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .column3 {
+            width: 200px;
+            height: 130px;
+            background-color: cadetblue;
+            margin-bottom: 10px;
+        }
+        .foot{
+            width: 960px;
+            height: 40px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgba(204, 204, 255,0.6);
+        }
+        .img-responsive {
+        transition: transform 0.3s ease; /* 平滑过渡效果 */
+    }
+    .img-responsive:hover {
+        transform: scale(1.1); /* 放大1.1倍 */
+    }
+
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="page-content">
+            <div class="page-header">
+                <div class="logo">
+                    <img src="../logo.png" alt="logo">
+                </div>
+                <div class="banner">
+                    做足河西文章，产出特色成果，建强丝路名校
+                </div>
+                <div class="banner2" style="margin-right: 15px;text-align: center;margin-top: 10px">
+                    明德尚美<br>求真笃行
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="https://www.hxu.edu.cn/">学院官网</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://home.hxu.ac.cn/">学院导航</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://jw.hxu.ac.cn/hxxyjw">教务系统</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://mail.hxu.edu.cn/">邮件系统</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://wljx.hxu.edu.cn/">网教平台</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://lib.hxu.edu.cn/">图书馆</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://dangg.hxu.edu.cn/">档案馆</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://www.ecard.hxu.edu.cn/">一卡通系统</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="columns-all">
+                <div class="columns-l">
+                    <div class="column1" id="1">
+                        <img src="https://www10.hxu.edu.cn/images/xiaoyaun0031.jpg" class="img-responsive" alt="简介" style="width: 370px; height: 200px">
+                    </div>
+                    <div class="column1" id="2">
+                        <a href="https://www.gov.cn/">
+                            <img src="https://www.sznews.com/resource/templateRes/201901/07/489/489/he002.jpg" class="img-responsive" alt="web前端" style="width: 370px; height: 200px;">
+                        </a>
+                    </div>
+                    <div class="column2" id="3">
+                        <a href="https://wljx.hxu.edu.cn/meol/jpk/course/layout/newpage/index.jsp?courseId=37770">
+                            <img src="https://pic1.zhimg.com/70/v2-e11c2220bc3fcb328ce604c1441e8e5a_1440w.avis?source=172ae18b&biz_tag=Post" class="img-responsive" alt="web前端" style="width: 180px; height: 200px;">
+                        </a>
+                    </div>
+                    <div class="column2" id="4">
+                        <a href="https://tuanwei.hxu.edu.cn/">
+                            <img src="https://img.tukuppt.com/png_preview/00/20/51/cmfaPgbmjH.jpg!/fw/780" class="img-responsive" alt="学习" style="width: 180px; height: 200px;">
+                        </a>
+                    </div>
+                    <div class="column2" id="5">
+                        <a href="https://mp.weixin.qq.com/s/0gAbuzU8aLSOK6Kc0tfC7w">
+                            <img src="../ymc.jpg" class="img-responsive" alt="青年传媒中心" style="width: 180px; height: 200px;">
+                        </a>
+                    </div>
+                    <div class="column2" id="6">
+                         <a href="https://mp.weixin.qq.com/s/0gAbuzU8aLSOK6Kc0tfC7w">
+                            <img src="https://www.hxu.edu.cn/favicon.ico" class="img-responsive" alt="河西学院" style="width: 180px; height: 200px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="columns-r">
+                    <div class="column3" id="7">
+                        <a href="https://ghc.hxu.edu.cn">
+                            <img src="https://www10.hxu.edu.cn/images/fddxa.jpg" class="img-responsive" alt="复旦大学对口支援" style="width: 200px; height: 130px;">
+                        </a>
+                    </div>
+                    <div class="column3" id="8">
+                        <a href="https://jyxj.hxu.edu.cn/">
+                            <img src="https://www10.hxu.edu.cn/images/aa_05.jpg" class="img-responsive" alt="服务新疆" style="width: 200px; height: 130px;">
+                        </a>
+                    </div>
+                    <div class="column3" id="9">
+                        <a href="https://jsjx.hxu.edu.cn/">
+                            <img src="../img.png" class="img-responsive" alt="计算机系" style="width: 200px; height: 130px;">
+                        </a></div>
+                </div>
+            </div>
+            <div class="foot">
+            <footer style="font-size: small;font-family: 微软雅黑,serif">版权没有© 网络工程 陇ICP备 我莫得 号-1 甘公网安备  我还是莫得<br>通讯地址：甘肃省张掖市甘州区北环路846号 邮编：734000</footer>
+        </div>
+        </div>
+
+    </div>
+</body>
+</html>
